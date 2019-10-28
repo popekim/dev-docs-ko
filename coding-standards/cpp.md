@@ -292,7 +292,7 @@ date: 2019-10-27
     RenderWorld_portals.cpp
     ```
 
-38. ["Reverse OOP" 패턴](https://www.youtube.com/watch?v=GnWASmocihE)을 사용할 때, 플랫폼 전용 클래스는 위 항목과 비슷한 명명 규칙을 사용한다.
+38. [Reverse OOP 패턴](https://www.youtube.com/watch?v=GnWASmocihE)을 사용할 때, 플랫폼 전용 클래스는 위 항목과 비슷한 명명 규칙을 사용한다.
 
     ```cpp
     class Renderer;
@@ -316,7 +316,7 @@ date: 2019-10-27
 44. 함수에서 매개변수를 통해 값을 반환할 때(out 매개변수)는 포인터를 사용하며, 매개변수 이름 앞에 out을 붙인다.
 
     **함수:**
-    `cpp
+    ```cpp
     void GetScreenDimension(uint32_t* const outWidth, uint32_t* const  outHeight)
     {
     }
@@ -466,8 +466,8 @@ date: 2019-10-27
     ```
 
     **적용 후:**
-    ```
-    cppconstexpr int DEFAULT_BUFER_SIZE = 65536;
+    ```cpp
+    constexpr int DEFAULT_BUFER_SIZE = 65536;
     ```
 
 11. <<<미정: constexpr
