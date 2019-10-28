@@ -42,7 +42,7 @@ date: 2019-10-27
     ```cpp
     void SomeMethod(const int someParameter);
     {
-    int someNumber;
+        int someNumber;
     }
     ```
 
@@ -50,13 +50,13 @@ date: 2019-10-27
     1. public 메서드의 이름은 파스칼 표기법을 따른다.
         ```cpp
         public:
-        void DoSomething();
+            void DoSomething();
         ```
 
     2. 그 외 다른 메서드의 이름은 카멜 표기법을 따른다.
         ```cpp
         private:
-        void doSomething();
+            void doSomething();
         ```
 
 4. 상수 또는 `#define` 으로 정의된 상수의 이름은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
@@ -85,8 +85,8 @@ date: 2019-10-27
     ```cpp
     enum class eDirection
     {
-    North,
-    South
+        North,
+        South
     }
     ```
 
@@ -95,9 +95,9 @@ date: 2019-10-27
     class Employee
     {
     protected:
-    int mDepartmentID;
+        int mDepartmentID;
     private:
-    int mAge;
+        int mAge;
     }
     ```
 
@@ -142,7 +142,7 @@ date: 2019-10-27
     ```cpp
     struct MeshData
     {
-    int32_t VertexCount;
+        int32_t VertexCount;
     }
     ```
 
@@ -172,7 +172,7 @@ date: 2019-10-27
     ```cpp
     if (bSomething)
     {
-    return;
+        return;
     }
     ```
 
@@ -187,10 +187,10 @@ date: 2019-10-27
     switch (number)
     {
     case 0:
-    ... 
-    break;
+        ... 
+        break;
     default:
-    break;
+        break;
     }
     ```
 
@@ -364,8 +364,8 @@ date: 2019-10-27
     ```cpp
     enum class eDirection : uint8_t
     {
-    North,
-    South
+        North,
+        South
     }
     ```
 
@@ -439,8 +439,8 @@ date: 2019-10-27
     ```cpp
     enum class eDirection
     {
-    North,
-    South
+        North,
+        South
     }
     ```
 
