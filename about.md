@@ -7,7 +7,11 @@ date: 2019-10-27
 개발에 도움이 되는 문서들을 모아놓은 곳입니다. 
 
 ## 라이센스
-이 웹사이트에서 보여드리는 실제 문서는 [깃허브 리포지토리](https://github.com/popekim/dev-docs-ko)에 MIT 라이센스로 공개해놨습니다. 이 리포지토리에 들어 있지 않은 다른 내용들(예: 본 웹사이트의 디자인 등)은 저작권법의 적용을 받습니다.
+이 웹사이트에서 보여드리는 실제 문서는 [깃허브 리포지토리](https://github.com/popekim/dev-docs-ko)에 MIT 라이선스로 공개해놨습니다. 이 리포지토리에 들어 있지 않은 다른 내용들(예: 본 웹사이트의 디자인 등)은 저작권법의 적용을 받습니다.
 
 ## 공헌하는 법
-[깃허브 리포지토리](https://github.com/popekim/dev-docs-ko)를 fork하신 후에 수정 후 pull request를 쏴주시면 확인후 반영해 드립니다.
+* [깃허브 리포지토리](https://github.com/popekim/dev-docs-ko)를 fork 하신 후에 수정 후, pull request를 쏴주시면 확인 후 반영해 드립니다.
+* 각 페이지 제일 상단에 달려있는 `수정 제안하기` 링크를 누르시면 곧바로 그 문서를 수정하는 깃허브 페이지로 이동합니다.
+
+### 공헌자 목록
+여태까지 공헌해 주신 분들의 목록을 보려면 [다음 링크를 눌러주세요.](https://github.com/popekim/dev-docs-ko/graphs/contributors)
