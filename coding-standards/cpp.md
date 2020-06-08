@@ -43,6 +43,7 @@ date: 2019-10-27
     void SomeMethod(const int someParameter);
     {
         int someNumber;
+        int id;
     }
     ```
 
