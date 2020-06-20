@@ -1,6 +1,6 @@
 ---
 title: "C++ 코딩 표준"
-date: 2019-10-27
+date: 2020-06-19
 ---
 
 * 원문(영어): [C++ Coding Standards](https://docs.google.com/document/d/1cT8EPgMXe0eopeHvwuFmbHG4TJr5kUmcovkr5irQZmo/edit )
