@@ -208,6 +208,7 @@ date: 2019-10-27
     case 2:
     case 3:
         DoNotFallthrough();
+        break;
     default:
         break;
     }
