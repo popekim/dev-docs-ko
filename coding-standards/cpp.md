@@ -464,12 +464,12 @@ date: 2020-06-19
 
     **적용 전:**
     ```cpp
-    const int DEFAULT_BUFER_SIZE = 65536;
+    const int DEFAULT_BUFFER_SIZE = 65536;
     ```
 
     **적용 후:**
     ```cpp
-    constexpr int DEFAULT_BUFER_SIZE = 65536;
+    constexpr int DEFAULT_BUFFER_SIZE = 65536;
     ```
 
 11. <<<미정: constexpr
