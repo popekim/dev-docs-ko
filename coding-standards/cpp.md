@@ -415,6 +415,7 @@ date: 2020-06-19
     ```
 
 60. 한 줄에 변수 하나만 선언한다.
+
     **틀린 방식:**
 
     ```cpp
@@ -432,6 +433,22 @@ date: 2020-06-19
 62. struct나 class에서 초기화 값 변경을 바꾸려고 const 멤버 변수를 쓰지 않는다. 참조(&) 멤버변수의 경우도 마찬가지
 
 63. <<<미정: __restrict keyword
+
+64. 콜론(:) 다음에 바로 줄이 바뀌는 경우가 아니면 항상 콜론 뒤에 공백을 넣는다.
+
+    **틀린 방식:**
+    ```cpp
+    MyClass::MyClass(const int num)
+      :mNum(num)
+    {
+    ```
+    
+    **올바른 방식:**
+    ```cpp
+    MyClass::MyClass(const int num)
+      : mNum(num)
+    {
+    ```
 
 ## 2. 최신 C++ 기능 관련
 
