@@ -431,7 +431,25 @@ date: 2020-06-19
 
 62. struct나 class에서 초기화 값 변경을 바꾸려고 const 멤버 변수를 쓰지 않는다. 참조(&) 멤버변수의 경우도 마찬가지
 
-63. <<<미정: __restrict keyword
+63. 멤버 변수를 초기화할 때는 초기화 리스트를 사용하는 것을 기본으로 한다. 초기화 리스트를 이용해 멤버 변수를 초기화할 때는 아래와 같은 포맷을 따라 한 줄에 변수 하나씩 초기화한다.
+
+    **틀린 방식:**
+    ```cpp
+    MyClass::MyClass(const int var1, const int var2)
+      :mVar1(var1), mVar2(var2), mVar3(0)
+    {
+    ```
+    
+    **올바른 방식:**
+    ```cpp
+    MyClass::MyClass(const int num)
+      : mVar1(var1)
+      , mVar2(var2)
+      , mVar3(0)
+    {
+    ```
+
+64. <<<미정: __restrict keyword
 
 ## 2. 최신 C++ 기능 관련
 
