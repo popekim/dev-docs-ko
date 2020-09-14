@@ -444,7 +444,7 @@ date: 2020-06-19
     
     **올바른 방식:**
     ```cpp
-    MyClass::MyClass(const int num)
+    MyClass::MyClass(const int var1, const int var2)
       : mVar1(var1)
       , mVar2(var2)
       , mVar3(0)
