@@ -20,7 +20,7 @@ date: 2020-09-18
 * [둠 3 코드 스타일과 규칙](ftp://ftp.idsoftware.com/idstuff/doom3/source/codestyleconventions.doc)
 * [IDesign C# 코딩 표준](http://www.idesign.net/downloads/getdownload/1985)
 
-## [포큐 아카데미](https://pocu.academy)에 비적용 사항
+## [POCU 아카데미](https://pocu.academy)에 비적용 사항
 ### 1. 명명 규칙과 스타일
 * 19
     * COMP3200: 무조건 tab 문자를 사용
