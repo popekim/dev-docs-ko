@@ -1,7 +1,10 @@
 ---
-title: "C++ 코딩 표준"
+title: "POCU 아카데미용 C++ 코딩 표준"
 date: 2021-02-24
 ---
+
+본 코딩 표준은 [Pope Kim의 C++ 코딩 표준](/ko/coding-standards/cpp)을 [POCU 아카데미](https://pocu.academy/ko/)에 적합하게 수정한 것입니다. 취소선(~~취소선~~) 표시가 된 항목들을 무시해주세요. 
+
 
 * 원문(영어): [C++ Coding Standards](https://docs.google.com/document/d/1cT8EPgMXe0eopeHvwuFmbHG4TJr5kUmcovkr5irQZmo/edit )
 
@@ -12,13 +15,6 @@ date: 2021-02-24
 2. 문제가 있을 경우 최대한 빨리 크래시가 나거나 assert에 걸리도록 코드를 작성한다.  어떻게든 프로그램을 돌게 만들다가 나중에 크래시가 나는 것보다 나쁜 상황은 없다.
 3. 정말 합당한 이유가 있지 않는 한, 통합개발환경(IDE)의 자동 서식을 따른다. (비주얼 스튜디오의 "Ctrl + K + D" 기능)
 4. 본 코딩표준을 따라 잘 짜여진 기존의 코드에서 배운다.
-
-### 참조문서
-
-이 코딩 표준은 아래의 코딩 표준들에서 영감을 얻었음.
-* [언리얼 엔진 4 코딩 표준](https://docs.unrealengine.com/latest/INT/Programming/Development/CodingStandard/)
-* [둠 3 코드 스타일과 규칙](ftp://ftp.idsoftware.com/idstuff/doom3/source/codestyleconventions.doc)
-* [IDesign C# 코딩 표준](http://www.idesign.net/downloads/getdownload/1985)
 
 ## I. 메인 코딩 표준
 1. 클래스와 구조체의 이름은 파스칼 표기법을 따른다.
@@ -297,9 +293,9 @@ date: 2021-02-24
 
 37. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 assert를 사용한다. Assert는 복구 불가능한 조건이다. Assert는 릴리즈 빌드에서 [__assume](https://docs.microsoft.com/en-us/cpp/intrinsics/assume) 키워드로 대체하여 컴파일러에 최적화 힌트를 줄 수 있다.
 
-38. 모든 메모리 할당은 직접 구현한 New, Delete 키워드를 통해 호출한다.
+38. ~~모든 메모리 할당은 직접 구현한 New, Delete 키워드를 통해 호출한다.~~
 
-39. memset, memcpy, memmove와 같은 메모리 연산 역시 우리 고유의 MemSet, MemCpy, MemMove 키워드를 통해 호출해야 한다.
+39. ~~memset, memcpy, memmove와 같은 메모리 연산 역시 우리 고유의 MemSet, MemCpy, MemMove 키워드를 통해 호출해야 한다.~~
 
 40. 어떤 이유로든 매개변수로 `nullptr`가 넘어올 수 있는 경우가 아니라면, 포인터 대신 참조자( & )를 사용하는 것을 원칙으로 한다. (예외는 다음 항목을 참고)
 
@@ -422,7 +418,8 @@ date: 2021-02-24
 
 1. include 전처리문 블록과 코드 본문 사이에 반드시 빈 줄이 있어야 한다.
 
-2. 탭(tab)은 비주얼 스튜디오 기본값을 사용하며, 비주얼 스튜디오를 사용하지 않을 시 띄어쓰기 4칸을 탭으로 사용한다.
+2. ~~탭(tab)은 비주얼 스튜디오 기본값을 사용하며, 비주얼 스튜디오를 사용하지 않을 시 띄어쓰기 4칸을 탭으로 사용한다.~~ \
+탭(tab)은 비주얼 스튜디오 기본값인 실제 탭 문자를 사용하며 스페이스 문자로 바꾸지 않는다.
 
 3. 중괄호( { )를 열 때는 언제나 새로운 줄에 연다.
 
@@ -503,8 +500,8 @@ date: 2021-02-24
 
 13. <<<미정: do not use shared_ptr
 
-## IV. 프로젝트 설정 및 프로젝트 구조
+## ~~IV. 프로젝트 설정 및 프로젝트 구조~~
 
-1. Visual C++: 프로젝트 설정을 변경하려면 항상 속성 시트(property sheets)에서 변경 한다.
+1. ~~Visual C++: 프로젝트 설정을 변경하려면 항상 속성 시트(property sheets)에서 변경 한다.~~
 
-2. 프로젝트 설정에서 컴파일 경고를 비활성화 하지 않는다. 그 대신, 코드에서 `#pragma` 를 사용한다.
+2. ~~프로젝트 설정에서 컴파일 경고를 비활성화 하지 않는다. 그 대신, 코드에서 `#pragma` 를 사용한다.~~
