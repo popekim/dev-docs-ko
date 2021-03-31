@@ -39,8 +39,8 @@ date: 2021-03-31
     ```cs
     public void SomeMethod(int someParameter)
     {
-    int someNumber;
-    int id;
+        int someNumber;
+        int id;
     }
     ```
 
@@ -49,15 +49,15 @@ date: 2021-03-31
     ```cs
     public uint GetAge()
     {
-    // 함수 구현부...
+        // 함수 구현부...
     }
     ```
 
-4. 단, 단순히 부울(boolean) 상태를 반환하는 메서드의 동사 부분은 최대한 `Is`, `Can`, `Has`, `Should`를 사용하되 그러는 것이 부자연스러울 경우에는 상태를 나타내는 다른 3인치 단수형 동사를 사용한다.
+4. 단, 단순히 부울(boolean) 상태를 반환하는 메서드의 동사 부분은 최대한 `Is`, `Can`, `Has`, `Should`를 사용하되 그러는 것이 부자연스러울 경우에는 상태를 나타내는 다른 3인칭 단수형 동사를 사용한다.
 
     ```cs
     public bool IsAlive(Person person);
-    public bool Has(Person person);
+    public bool HasChild(Person person);
     public bool CanAccept(Person person);
     public bool ShouldDelete(Person person);
     public bool Exists(Person person);
@@ -68,7 +68,7 @@ date: 2021-03-31
     ```cs
     public uint GetAge()
     {
-    // 함수 구현부...
+        // 함수 구현부...
     }
     ```
 
@@ -77,7 +77,7 @@ date: 2021-03-31
     ```cs
     private uint getAge()
     {
-    // 함수 구현부...
+        // 함수 구현부...
     }
     ```
 
@@ -118,7 +118,7 @@ date: 2021-03-31
 12. 부울(boolean) 변수는 앞에 `b`를 붙인다.
 
     ```cs
-    bool bFired;			// 지역변수
+    bool bFired;			    // 지역변수
     private bool mbFired;		// private 멤버변수
     ```
 
@@ -194,7 +194,7 @@ date: 2021-03-31
     ```cs
     public class Employee
     {
-    public string Name { get; set; }
+        public string Name { get; set; }
     }
     ```
 
@@ -273,19 +273,18 @@ date: 2021-03-31
 
     ```cs
     public class PlayerAnimation {}
-
-    PlayerAnimation.cs
     ```
+    PlayerAnimation.cs 
 
 31. 여러 파일이 하나의 클래스를 이룰 때(즉, partial 클래스), 파일 이름은 클래스 이름으로 시작하고, 그 뒤에 마침표와 세부 항목 이름을 붙인다.
 
     ```cs
     public partial class Human;
-
+    ```
+    
     Human.Head.cs
     Human.Body.cs
     Human.Arm.cs
-    ```
 
 32. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 `assert`를 사용한다. `assert`는 복구 불가능한 조건이다.(예: 대부분의 함수는 다음과 같은 `assert`를 가질 수도... `Debug.Assert`(매개변수의 null 값 검사) )
 
@@ -306,20 +305,20 @@ date: 2021-03-31
     ```cs
     public class SomeClass
     {
-    public int Count { get; set; }
-    public void Func(int count)
-    {
-        for (int count = 0; count != 10; ++count)
+        public int Count { get; set; }
+        public void Func(int count)
         {
-        // count를 사용
+            for (int count = 0; count != 10; ++count)
+            {
+                // count를 사용
+            }
         }
-    }
     }
     ```
 
 37. 언제나 `System.Collections`에 들어있는 컨테이너 대신에 `System.Collections.Generic`에 들어있는 컨테이너를 사용한다. 순수 배열을 사용하는 것도 괜찮다.
 
-38. `var` 키워드를 사용하지 않으려 노력한다. 단, 대입문의 우항에서 데이터형이 명확하게 드러나는 경우, 또는 데이터형이 중요하지 않은 경우에는 예외를 허용한다 . `IEnumerable`에 `var`를 사용하거나 우항의 `new` 키워드를 통해 어떤 개체가 생성되는지 알 수 있는 등이 허용되는 경우의 좋은 예이다.
+38. `var` 키워드를 사용하지 않으려 노력한다. 단, 대입문의 우항에서 데이터형이 명확하게 드러나는 경우, 또는 데이터형이 중요하지 않은 경우에는 예외를 허용한다. `IEnumerable`에 `var`를 사용하거나 우항의 `new` 키워드를 통해 어떤 개체가 생성되는지 알 수 있는 등이 허용되는 경우의 좋은 예이다.
 
     ```cs
     var text = "string obviously";
@@ -428,7 +427,7 @@ date: 2021-03-31
     public Guid? ID { get; set; }
     ```
 
-2. 컨트롤러 메서드에서 요청에서 처음으로 할 일은 입력값 검증이다. 이 검증을 통과하면 모든 입력값은 유효한 것으로 간주한다. 따라서 [required] 애트리뷰트가 달린 `nullable` 속성은 그 후 부터는 모두 `null`이 아니다.
+2. 컨트롤러 메서드에서 요청에서 처음으로 할 일은 입력값 검증이다. 이 검증을 통과하면 모든 입력값은 유효한 것으로 간주한다. 따라서 `[required]` 애트리뷰트가 달린 `nullable` 속성은 그 후 부터는 모두 `null`이 아니다.
 
 3. 위 원칙과는 달리 `[RouteParam]` 애트리뷰트가 달린 변수는 `?`를 가지지 않는다.
 
