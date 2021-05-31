@@ -33,17 +33,20 @@ date: 2021-02-24
     ```
 
 3. 메서드 또는 함수 이름은 동사로 시작한다.
+
     a. public 메서드의 이름은 파스칼 표기법을 따른다.
-        ```cpp
-        public:
-            void DoSomething();
-        ```
+
+    ```cpp
+    public:
+        void DoSomething();
+    ```
 
     b. 그 외 다른 메서드의 이름은 카멜 표기법을 따른다.
-        ```cpp
-        private:
-            void doSomething();
-        ```
+
+    ```cpp
+    private:
+        void doSomething();
+    ```
 
 4. 상수 또는 `#define` 으로 정의된 상수의 이름은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
 
