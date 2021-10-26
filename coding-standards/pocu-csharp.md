@@ -6,7 +6,7 @@ date: 2021-03-31
 
 본 코딩 표준은 [Pope Kim의 C# 코딩 표준](/ko/coding-standards/csharp)을 [POCU 아카데미](https://pocu.academy/ko/)에 적합하게 수정한 것입니다. 취소선(~~취소선~~) 표시가 된 항목들은 무시해주세요. 
 
-* 원문(영어): [C# Coding Standards](https://docs.popekim.com/en/coding-standards/csharp)
+* 원문(영어): [C# Coding Standards](/en/coding-standards/csharp)
 
 ## 머리말
 
@@ -288,7 +288,9 @@ date: 2021-03-31
     }
     ```
 
-    PlayerAnimation.cs 
+    ```
+    PlayerAnimation.cs
+    ```
 
 31. 여러 파일이 하나의 클래스를 이룰 때(즉, partial 클래스), 파일 이름은 클래스 이름으로 시작하고, 그 뒤에 마침표와 세부 항목 이름을 붙인다.
 
