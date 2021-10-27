@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C# 코딩 표준"
-date: 2021-03-31
+date: 2021-10-27
 
 ---
 
@@ -221,11 +221,11 @@ date: 2021-03-31
     ```cs
     switch (number)
     {
-    case 0:
-        ... 
-        break;
-    default:
-        break;
+        case 0:
+            ... 
+            break;
+        default:
+            break;
     }
     ```
 
@@ -234,12 +234,12 @@ date: 2021-03-31
     ```cs
     switch (type)
     {
-    case 1:
-        ... 
-        break;
-    default:
-        Debug.Fail("unknown type");
-        break;
+        case 1:
+            ... 
+            break;
+        default:
+            Debug.Fail("unknown type");
+            break;
     }
     ```
 
@@ -298,9 +298,11 @@ date: 2021-03-31
     public partial class Human;
     ```
 
+    ```
     Human.Head.cs
     Human.Body.cs
     Human.Arm.cs
+    ```
 
 32. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 `assert`를 사용한다. `assert`는 복구 불가능한 조건이다.(예: 대부분의 함수는 다음과 같은 `assert`를 가질 수도... `Debug.Assert`(매개변수의 null 값 검사) )
 
@@ -357,12 +359,12 @@ date: 2021-03-31
     ```cs
     switch (accountType)
     {
-    case AccountType.Personal:
-        return something;
-    case AccountType.Business:
-        return somethingElse;
-    default:
-        throw new ArgumentOutOfRangeException(nameof(AccountType));
+        case AccountType.Personal:
+            return something;
+        case AccountType.Business:
+            return somethingElse;
+        default:
+            throw new ArgumentOutOfRangeException(nameof(AccountType));
     }
     ```
 
