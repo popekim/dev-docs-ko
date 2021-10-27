@@ -1,12 +1,12 @@
 ---
 title: "POCU 아카데미용 C# 코딩 표준"
-date: 2021-03-31
+date: 2021-10-27
 
 ---
 
 본 코딩 표준은 [Pope Kim의 C# 코딩 표준](/ko/coding-standards/csharp)을 [POCU 아카데미](https://pocu.academy/ko/)에 적합하게 수정한 것입니다. 취소선(~~취소선~~) 표시가 된 항목들은 무시해주세요. 
 
-* 원문(영어): [C# Coding Standards](https://docs.google.com/document/d/1ymFFTVpR4lFEkUgYNJPRJda_eLKXMB6Ok4gpNWOo4rc/edit)
+* 원문(영어): [C# Coding Standards](/en/coding-standards/csharp)
 
 ## 머리말
 
@@ -188,7 +188,7 @@ date: 2021-03-31
 
 21. getter와 setter 대신 프로퍼티를 사용한다.
 
-    틀린 방식 :
+    **틀린 방식:**
 
     ```cs
     public class Employee
@@ -199,7 +199,7 @@ date: 2021-03-31
     }
     ```
 
-    올바른 방식 :
+    **올바른 방식:**
 
     ```cs
     public class Employee
@@ -221,11 +221,12 @@ date: 2021-03-31
     ```cs
     switch (number)
     {
-    case 0:
-        ... 
-        break;
-    default:
-        break;
+        case 0:
+            ... 
+            break;
+        default:
+            break;
+    }
     ```
 
 25. `switch` 문에서 `default:` 케이스가 절대 실행될 일이 없는 경우, `default:` 안에 `Debug.Fail()` 또는 `Debug.Assert(false)` 란 코드를 추가한다.
@@ -233,12 +234,12 @@ date: 2021-03-31
     ```cs
     switch (type)
     {
-    case 1:
-        ... 
-        break;
-    default:
-        Debug.Fail("unknown type");
-        break;
+        case 1:
+            ... 
+            break;
+        default:
+            Debug.Fail("unknown type");
+            break;
     }
     ```
 
@@ -250,29 +251,27 @@ date: 2021-03-31
 
 27. 클래스 안에서 멤버 변수와 메서드의 등장 순서는 다음을 따른다.
 
-    ```
-    a. public 멤버변수/프로퍼티
-    b. internal 멤버변수/프로퍼티
-    c. protected 멤버변수/프로퍼티
-    d. private 멤버변수
-        단, 프로퍼티와 대응하는 private 멤버변수는 프로퍼티 바로 위에 적음
-    e. 생성자
-    f. public 메서드
-    g. Internal 메서드
-    h. protected 메서드
-    i. private 메서드
-    ```
+    1. public 멤버변수/프로퍼티
+    2. internal 멤버변수/프로퍼티
+    3. protected 멤버변수/프로퍼티
+    4. private 멤버변수
+        * 단, 프로퍼티와 대응하는 private 멤버변수는 프로퍼티 바로 위에 적음
+    5. 생성자
+    6. public 메서드
+    7. Internal 메서드
+    8. protected 메서드
+    9. private 메서드
 
 28. 대부분의 경우 함수 오버로딩을 피한다.
 
-    올바른 방식:
+    **올바른 방식:**
 
     ```cs
     public Anim GetAnimByIndex(int index);
     public Anim GetAnimByName(string name);
     ```
 
-    틀린 방식:
+    **틀린 방식:**
 
     ```cs
     public Anim GetAnim(int index);
@@ -284,10 +283,14 @@ date: 2021-03-31
 30. 파일 이름은 대소문자까지 포함해서 반드시 클래스 이름과 일치해야 한다.
 
     ```cs
-    public class PlayerAnimation {}
+    public class PlayerAnimation 
+    {
+    }
     ```
 
-    PlayerAnimation.cs 
+    ```
+    PlayerAnimation.cs
+    ```
 
 31. 여러 파일이 하나의 클래스를 이룰 때(즉, partial 클래스), 파일 이름은 클래스 이름으로 시작하고, 그 뒤에 마침표와 세부 항목 이름을 붙인다.
 
@@ -295,9 +298,11 @@ date: 2021-03-31
     public partial class Human;
     ```
 
+    ```
     Human.Head.cs
     Human.Body.cs
     Human.Arm.cs
+    ```
 
 32. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 `assert`를 사용한다. `assert`는 복구 불가능한 조건이다.(예: 대부분의 함수는 다음과 같은 `assert`를 가질 수도... `Debug.Assert`(매개변수의 null 값 검사) )
 
@@ -354,12 +359,12 @@ date: 2021-03-31
     ```cs
     switch (accountType)
     {
-    case AccountType.Personal:
-        return something;
-    case AccountType.Business:
-        return somethingElse;
-    default:
-        throw new ArgumentOutOfRangeException(nameof(AccountType));
+        case AccountType.Personal:
+            return something;
+        case AccountType.Business:
+            return somethingElse;
+        default:
+            throw new ArgumentOutOfRangeException(nameof(AccountType));
     }
     ```
 
@@ -383,16 +388,14 @@ date: 2021-03-31
 
 48. 개체 초기자(object initializer)를 사용하지 않으려고 노력한다. 그 대신 생성자와 이름으로 지정한 매개변수(named parameter)를 사용하는 게 더 좋은 방법이다. 이 원칙에 대한 두가지 예는 다음과 같다.
 
-    a. 개체 생성을 딱 한 군데서만 할 경우 (예: 한군데서만 사용하는 DTO)\
-    b. 개체 생성을 해당 클래스 안에 있는 정적 메서드에서 하는 경우 (예: Factory 패턴)
-
+    1. 개체 생성을 딱 한 군데서만 할 경우 (예: 한군데서만 사용하는 DTO)
+    2. 개체 생성을 해당 클래스 안에 있는 정적 메서드에서 하는 경우 (예: Factory 패턴)
 
 ## II. 소스 코드 포맷팅
 
 1. 탭(tab)은 비주얼 스튜디오 기본값을 사용하며, 비주얼 스튜디오를 사용하지 않을 시 띄어쓰기 4칸을 탭으로 사용한다.
 
 2. 중괄호( `{` )를 열 때는 언제나 새로운 줄에 연다.
-
 
 3. 중괄호 안( `{ }` )에 코드가 한 줄만 있더라도 반드시 중괄호를 사용한다.
 
@@ -405,13 +408,13 @@ date: 2021-03-31
 
 4. 한 줄에 변수 하나만 선언한다.
 
-   틀린 방식:
+   **틀린 방식:**
 
    ```cs
    int counter = 0, index = 0;
    ```
 
-   올바른 방식: 
+   **올바른 방식:**
 
    ```cs
    int counter = 0;
