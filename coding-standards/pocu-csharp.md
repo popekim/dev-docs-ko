@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C# 코딩 표준"
-date: 2021-10-27
+date: 2022-01-05
 
 ---
 
@@ -308,9 +308,15 @@ date: 2021-10-27
 
 33. 비트 플래그 열거형은 이름 뒤에 `Flags`를 붙인다.
 
+    
     ```cs
+    [Flags]
     public enum EVisibilityFlags
     {
+        None = 0,
+        One = 1 << 0,
+        Two = 1 << 1,
+        Three = 1 << 2,
     }
     ```
 
