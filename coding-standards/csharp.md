@@ -88,7 +88,7 @@ date: 2021-10-27
 8. 상수로 사용하는 개체형 변수에는 `static readonly`를 사용한다.
 
    ```cs
-   public static readonly MY_CONST_OBJECT = new MyConstClass();
+   public static readonly MyConstClass MY_CONST_OBJECT = new MyConstClass();
    ```
 
 9. `static readonly` 변수는 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
