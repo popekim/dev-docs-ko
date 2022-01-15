@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C# 코딩 표준"
-date: 2022-01-05
+date: 2022-01-15
 
 ---
 
@@ -314,9 +314,9 @@ date: 2022-01-05
     public enum EVisibilityFlags
     {
         None = 0,
-        One = 1 << 0,
-        Two = 1 << 1,
-        Three = 1 << 2,
+        Character = 1 << 0,
+        Terrain = 1 << 1,
+        Building = 1 << 2,
     }
     ```
 
