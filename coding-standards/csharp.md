@@ -1,6 +1,6 @@
 ---
 title: "C# 코딩 표준"
-date: 2021-10-27
+date: 2022-01-05
 ---
 
 * 원문(영어): [C# Coding Standards](/en/coding-standards/csharp)
@@ -88,7 +88,7 @@ date: 2021-10-27
 8. 상수로 사용하는 개체형 변수에는 `static readonly`를 사용한다.
 
    ```cs
-   public static readonly MY_CONST_OBJECT = new MyConstClass();
+   public static readonly MyConstClass MY_CONST_OBJECT = new MyConstClass();
    ```
 
 9. `static readonly` 변수는 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
@@ -299,8 +299,13 @@ date: 2021-10-27
 33. 비트 플래그 열거형은 이름 뒤에 `Flags`를 붙인다.
 
     ```cs
+    [Flags]
     public enum EVisibilityFlags
     {
+        None = 0,
+        One = 1 << 0,
+        Two = 1 << 1,
+        Three = 1 << 2,
     }
     ```
 
