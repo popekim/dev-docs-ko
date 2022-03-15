@@ -359,7 +359,7 @@ date: 2022-01-15
         case AccountType.Business:
             return somethingElse;
         default:
-            throw new ArgumentOutOfRangeException(nameof(AccountType));
+            throw new NotImplementedException($"unhandled switch case: {accountType}");
     }
     ```
 
