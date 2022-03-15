@@ -359,7 +359,7 @@ date: 2022-01-15
         case AccountType.Business:
             return somethingElse;
         default:
-            throw NotImplementedException($"unhandled switch case: {accountType}");
+            throw new NotImplementedException($"unhandled switch case: {accountType}");
     }
     ```
 
