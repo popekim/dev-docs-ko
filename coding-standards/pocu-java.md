@@ -413,7 +413,7 @@ date: 2021-03-27
     ```java
     if (expression) {
         // 코드 생략
-    } else if (expression){
+    } else if (expression) {
         // 코드 생략
     } else {
         // 코드 생략
