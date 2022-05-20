@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 Java 코딩 표준"
-date: 2021-03-27
+date: 2022-05-19
 ---
 
 * 원문(영어): [POCU Java Coding Standards](https://docs.google.com/document/d/1F6A1yc6ZfeLyzAjmPjdJZwLXTd-QXy_MhGA_so7NlSQ/edit)
