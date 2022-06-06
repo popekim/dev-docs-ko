@@ -14,6 +14,8 @@ date: 2021-03-31
 * [POCU 아카데미용 C# 코딩표준](/ko/coding-standards/pocu-csharp)
 * [POCU 아카데미용 Java 코딩표준](/ko/coding-standards/pocu-java)
 
+## [Galexandria 번역문서 모음](/ko/galexandria)
+
 
 
 
