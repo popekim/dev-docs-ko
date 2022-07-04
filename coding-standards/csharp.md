@@ -1,6 +1,6 @@
 ---
 title: "C# 코딩 표준"
-date: 2022-03-15
+date: 2022-07-04
 ---
 
 * 원문(영어): [C# Coding Standards](/en/coding-standards/csharp)
@@ -145,7 +145,7 @@ date: 2022-03-15
     }
     ```
 
-16. 구조체를 선언할 때는 앞에 `S`를 붙인다
+16. 구조체를 선언할 때는 앞에 `S`를 붙인다. 단, `readonly struct`일 때는 그렇지 아니한다
 
     ```cs
     public struct SUserID;
@@ -252,7 +252,7 @@ date: 2022-03-15
     8. protected 메서드
     9. private 메서드
 
-28. 대부분의 경우 함수 오버로딩을 피한다.
+28. 매개변수 자료형이 범용적인 경우, 함수 오버로딩을 피한다.
 
     **올바른 방식:**
 
@@ -331,15 +331,7 @@ date: 2022-03-15
 
 37. 언제나 `System.Collections`에 들어있는 컨테이너 대신에 `System.Collections.Generic`에 들어있는 컨테이너를 사용한다. 순수 배열을 사용하는 것도 괜찮다.
 
-38. `var` 키워드를 사용하지 않으려 노력한다. 단, 대입문의 우항에서 데이터형이 명확하게 드러나는 경우, 또는 데이터형이 중요하지 않은 경우에는 예외를 허용한다. `IEnumerable`에 `var`를 사용하거나 우항의 `new` 키워드를 통해 어떤 개체가 생성되는지 알 수 있는 등이 허용되는 경우의 좋은 예이다.
-
-    ```cs
-    var text = "string obviously";
-    var age = 28;
-    var employee = new Employee();
-    
-    string accountNumber = GetAccountNumber();
-    ```
+38. `var` 키워드를 사용하지 않는다. 단, 데이터형이 중요하지 않은 경우에는 예외를 허용한다. `IEnumerable`에 `var`를 사용하거나 익명 타입(anonymous type)을 사용할 때가 좋은 예이다.
 
 39. 싱글턴 패턴 대신에 정적(`static`) 클래스를 사용한다.
 
@@ -386,6 +378,18 @@ date: 2022-03-15
     1. 개체 생성을 딱 한 군데서만 할 경우 (예: 한군데서만 사용하는 DTO)
     2. 개체 생성을 해당 클래스 안에 있는 정적 메서드에서 하는 경우 (예: Factory 패턴)
 
+49. 함수에 전달하는 `out` 매개변수는 별도의 라인에 선언한다. 즉, 인자 목록 안에서 선언하지 않는다.
+
+50. `using` 선언(C# 8.0)의 사용을 금한다. 대신 `using` 문을 사용한다.
+
+51. `new` 키워드 뒤에 반드시 명시적으로 자료형을 적어준다. (즉, C# 9.0의 `new()` 사용 금지) 단, 함수 내부에서 익명 타입(anonymous type)을 사용하기 위해 그럴 때는 허용한다.
+
+52. 프로퍼티에 `private init`(C# 9.0)을 최대한 사용한다.
+
+53. 파일 범위 namespace 선언(C# 10.0)을 사용한다
+
+54. 범용적인 자료형을 강타입(strong type)으로 만들 때는`readonly record struct`(C# 10.0)를 사용한다
+
 ## II. 소스 코드 포맷팅
 
 1. 탭(tab)은 비주얼 스튜디오 기본값을 사용하며, 비주얼 스튜디오를 사용하지 않을 시 띄어쓰기 4칸을 탭으로 사용한다.
@@ -416,9 +420,23 @@ date: 2022-03-15
    int index = 0;
    ```
 
-## III. 특정 프레임워크용 가이드라인
+## III. 특정 프레임워크/패턴 용 가이드라인
 
-### A. XAML 컨트롤
+### A. 자동 직렬화 (예: `System.Text.Json`)
+
+1. 자동 직렬화에 사용할 데이터는 `class`로 정의한다
+
+2. 자동 직렬화 용 `class` 파일에는 특정 직렬화 라이브러리 전용 attribute를 넣지 않는다
+
+3. 자동 직렬화 용 `class`의 데이터는 언제나 `public` 자동 프로퍼티를 사용한다. (프로퍼티와 멤버 필드의 1:1 대칭 관계)
+
+4. 자동 직렬화 용 `class`에 읽기 전용 프로퍼티가 필요한 경우, 그 대신 `public` 메서드를 만든다
+
+5. 자동 직렬화 용 `class`의 `public` 생성자는 언제나 하나만 두며, 이 생성자는 매개변수를 받지 않는다
+
+6. 자동 직렬화 함수(예: `JsonSerializer.Serialize<>()`)를 직접 호출하지 않는다. 그 대신 wrapper 함수를 만들어 직렬화 함수에 넣을 수 있는 매개변수의 자료형을 통제한다.
+
+### B. XAML 컨트롤
 
 1. 컨트롤의 이름(예: `x:name`)은 정말 필요한 경우에만 만든다..
 
@@ -435,7 +453,7 @@ date: 2022-03-15
    xButtonAccept
    ```
 
-### B. ASP .NET Core
+### C. ASP .NET Core
 
 1. REST API의 요청 바디(request body)용으로 DTO(Data Transfer Object, 데이터 전송 개체)를 만들 때, 각 값형 프로퍼티를 `nullable`로 만들어 모델 유효성 검증(model validation)이 자동으로 이뤄지게 한다.
 
@@ -452,7 +470,7 @@ date: 2022-03-15
    public bool GetAsync([RouteParam]Guid userID)
    ```
 
-### C. 서비스/리포 패턴
+### D. 서비스/리포 패턴
 
 1. 내부적으로만 사용되는 DTO 클래스와 열거형(`enum`)들은(예: 내부 마이크로서비스용 DTO, 서비스/리포 사이의 DTO) 변수명 앞에 `X`를 붙인다. 이는 이 DTO들이 임시 클래스와 열거형임을 의미한다.
 
