@@ -16,6 +16,8 @@ date: 2021-03-31
 
 ## [Galexandria 번역문서 모음](/ko/galexandria)
 
+## 번역 관련
+* [IT 번역 용어집(영한)](/ko/translation/terms)
 
 
 
