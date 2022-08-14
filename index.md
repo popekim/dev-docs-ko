@@ -18,6 +18,7 @@ date: 2022-08-14
 
 ## 번역 관련
 * [IT 번역 용어집(영한)](/ko/translation/terms)
+* ['게임 개발자를 위한 물리(개정 2판)' 번역 용어표](/ko/translation/physics-for-game-developers-terms)
 
 
 
