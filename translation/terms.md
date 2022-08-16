@@ -30,7 +30,6 @@ date: 2022-08-14
 |architecture pattern             |아키텍처 패턴                     |                                        |                                                                          |
 |archive                          |아카이브                        |리눅스 계열의 정적 라이브러리                        |                                                                          |
 |argument                         |인자                          |                                        |                                                                          |
-|argument                         |인자                          |                                        |                                                                          |
 |arithmetic operation             |산술 연산                       |                                        |                                                                          |
 |ASCII Code                       |아스키코드                       |                                        |                                                                          |
 |assert                           |어서트                         |                                        |                                                                          |
