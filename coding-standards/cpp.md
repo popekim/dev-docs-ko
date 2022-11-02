@@ -3,7 +3,7 @@ title: "C++ 코딩 표준"
 date: 2021-02-24
 ---
 
-* 원문(영어): [C++ Coding Standards](https://docs.google.com/document/d/1cT8EPgMXe0eopeHvwuFmbHG4TJr5kUmcovkr5irQZmo/edit )
+* 원문(영어): [C++ Coding Standards](https://docs.popekim.com/en/coding-standards/cpp)
 
 ## 머리말
 ### 기본 원칙
@@ -36,7 +36,7 @@ date: 2021-02-24
     }
     ```
 
-3. 메서드 또는 함수 이름은 동사로 시작한다.
+3. 메서드 이름은 동사-목적어 쌍으로 표기한다.
     
     a. public 메서드의 이름은 파스칼 표기법을 따른다.
     ```cpp
