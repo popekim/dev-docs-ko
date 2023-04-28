@@ -1,6 +1,6 @@
 ---
 title: "메인 페이지"
-date: 2022-08-14
+date: 2023-04-28
 ---
 
 ## 코딩표준
@@ -9,6 +9,7 @@ date: 2022-08-14
 * [C# 코딩표준](/ko/coding-standards/csharp)
 
 ### POCU 아카데미용
+* [POCU 아카데미용 6502 어셈블리 코딩표준](/ko/coding-standards/pocu-6502)
 * [POCU 아카데미용 C 코딩표준](/ko/coding-standards/pocu-c)
 * [POCU 아카데미용 C++ 코딩표준](/ko/coding-standards/pocu-cpp)
 * [POCU 아카데미용 C# 코딩표준](/ko/coding-standards/pocu-csharp)
