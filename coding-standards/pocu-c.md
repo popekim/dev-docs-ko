@@ -15,7 +15,7 @@ date: 2021-04-01
 
 이 코딩 표준은 아래의 코딩 표준들에서 영감을 얻었음.
 
-* [Indian Hill](https://www.maultech.com/chrislott/resources/cstyle/indhill-cstyle.pdf)
+* [Indian Hill](https://www2.cs.arizona.edu/~mccann/cstyle.html)
 * [Linux Kernel](https://www.kernel.org/doc/html/latest/process/coding-style.html)
 * [GNU](https://www.gnu.org/prep/standards/html_node/Writing-C.html#Writing-C)
 
