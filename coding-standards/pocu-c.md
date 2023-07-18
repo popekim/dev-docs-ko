@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C 코딩 표준"
-date: 2023-05-11
+date: 2023-07-18
 
 ---
 
@@ -491,7 +491,7 @@ date: 2023-05-11
     nums = malloc(LENGTH * sizeof(int));
     
     for (i = 0; i < LENGTH; ++i) {
-    *nums++ = 15 * (i + 1);
+        *nums++ = 15 * (i + 1);
     }
     
     free(nums); /* 잘못된 메모리를 해제함 */
@@ -508,7 +508,7 @@ date: 2023-05-11
     p = pa_nums;
     
     for (i = 0; i < LENGTH; ++i) {
-    *p++ = 15 * (i + 1);
+        *p++ = 15 * (i + 1);
     }
     
     free(pa_nums); /* 올바른 메모리를 해제함 */
