@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 Java 코딩 표준"
-date: 2022-05-19
+date: 2023-01-12
 ---
 
 * 원문(영어): [POCU Java Coding Standards](https://docs.google.com/document/d/1F6A1yc6ZfeLyzAjmPjdJZwLXTd-QXy_MhGA_so7NlSQ/edit)
@@ -187,7 +187,7 @@ date: 2022-05-19
     }
     ```
 
-17. 지역 변수를 선언할 때는 그 지역 변수를 사용하는 코드와 동일한 줄에 선언하는 것을 원칙으로 한다.
+17. 지역 변수를 선언할 때는 그 지역 변수를 처음 사용하는 코드와 최대한 가까이 선언하는 것을 원칙으로 한다.
 
 18. `double`이 반드시 필요한 경우가 아닌 이상 부동 소수점 값에 `f`를 붙여준다.
 

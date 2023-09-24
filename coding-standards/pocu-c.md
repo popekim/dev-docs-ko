@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C 코딩 표준"
-date: 2021-04-01
+date: 2023-07-18
 
 ---
 
@@ -15,7 +15,7 @@ date: 2021-04-01
 
 이 코딩 표준은 아래의 코딩 표준들에서 영감을 얻었음.
 
-* [Indian Hill](https://www.maultech.com/chrislott/resources/cstyle/indhill-cstyle.pdf)
+* [Indian Hill](https://www2.cs.arizona.edu/~mccann/cstyle.html)
 * [Linux Kernel](https://www.kernel.org/doc/html/latest/process/coding-style.html)
 * [GNU](https://www.gnu.org/prep/standards/html_node/Writing-C.html#Writing-C)
 
@@ -491,7 +491,7 @@ date: 2021-04-01
     nums = malloc(LENGTH * sizeof(int));
     
     for (i = 0; i < LENGTH; ++i) {
-    *nums++ = 15 * (i + 1);
+        *nums++ = 15 * (i + 1);
     }
     
     free(nums); /* 잘못된 메모리를 해제함 */
@@ -508,7 +508,7 @@ date: 2021-04-01
     p = pa_nums;
     
     for (i = 0; i < LENGTH; ++i) {
-    *p++ = 15 * (i + 1);
+        *p++ = 15 * (i + 1);
     }
     
     free(pa_nums); /* 올바른 메모리를 해제함 */
