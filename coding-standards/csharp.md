@@ -91,7 +91,7 @@ date: 2023-11-24
    public static readonly MyConstClass MY_CONST_OBJECT = new MyConstClass();
    ```
 
-1. `static readonly` 변수는 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
+1. 상수로 사용하는 `static readonly` 변수는 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
 
 1. 초기화 후 값이 변하지 않는 변수는 `readonly`로 선언한다.
 
