@@ -201,7 +201,7 @@ date: 2021-02-24
     }
     ```
 
-23. `default` case가 절대 실행될 일이 없는 경우, `default` case 안에 `Assert(false);` 란 코드를 추가한다. `Assert()`를 직접 구현하면 그 안에서 릴리즈 빌드 시 최적화 힌트를 추가할 수 있다.
+23. `default` case가 절대 실행될 일이 없는 경우, `default` case 안에 `assert(false);` 란 코드를 추가한다. ~~`Assert()`를 직접 구현하면 그 안에서 릴리즈 빌드 시 최적화 힌트를 추가할 수 있다.~~
 
     ```cpp
     switch (type)
@@ -210,7 +210,7 @@ date: 2021-02-24
         ... 
         break;
     default:
-        Assert(false, "unknown type");
+        assert(false); // unknown type"
         break;
     }
     ```
@@ -292,9 +292,9 @@ date: 2021-02-24
     Renderer_gl.cpp		// RendererGL 구현 소스
     ```
 
-36. 표준 C assert 대신에 자신만의 Assert 버전을 구현한다.
+36. ~~표준 C assert 대신에 자신만의 Assert 버전을 구현한다.~~
 
-37. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 assert를 사용한다. Assert는 복구 불가능한 조건이다. Assert는 릴리즈 빌드에서 [__assume](https://docs.microsoft.com/en-us/cpp/intrinsics/assume) 키워드로 대체하여 컴파일러에 최적화 힌트를 줄 수 있다.
+37. 특정 조건이 반드시 충족되어야 한다고 가정(assertion)하고 짠 코드 모든 곳에 assert를 사용한다. assert는 복구 불가능한 조건이다. ~~Assert는 릴리즈 빌드에서 [__assume](https://docs.microsoft.com/en-us/cpp/intrinsics/assume) 키워드로 대체하여 컴파일러에 최적화 힌트를 줄 수 있다.~~
 
 38. ~~모든 메모리 할당은 직접 구현한 New, Delete 키워드를 통해 호출한다.~~
 
@@ -322,8 +322,8 @@ date: 2021-02-24
     ```cpp
     void GetScreenDimension(uint32_t* const outWidth, uint32_t* const  outHeight)
     {
-        Assert(outWidth);
-        Assert(outHeight);
+        assert(outWidth);
+        assert(outHeight);
     }
     ```
 
@@ -471,7 +471,7 @@ date: 2021-02-24
     }
     ```
 
-3. 가능한 `Assert` 대신 `static_assert` 를 사용한다.
+3. 가능한 `assert` 대신 `static_assert` 를 사용한다.
 
 4. 포인터에 `NULL` 대신 `nullptr` 를 사용합니다.
 
