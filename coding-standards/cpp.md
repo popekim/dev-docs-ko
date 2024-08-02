@@ -1,6 +1,6 @@
 ---
 title: "C++ 코딩 표준"
-date: 2021-02-24
+date: 2024-08-01
 ---
 
 * 원문(영어): [C++ Coding Standards](https://docs.popekim.com/en/coding-standards/cpp)
