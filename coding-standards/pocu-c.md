@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 C 코딩 표준"
-date: 2023-07-18
+date: 2024-08-07
 
 ---
 
@@ -28,21 +28,21 @@ date: 2023-07-18
    int num_monsters;
    ```
 
-2. 단순히 반복문에 사용되는 변수가 아닌 경우엔 `i`, `e` 같은 변수명 대신 `index`, `employee` 처럼 변수에 저장되는 데이터를 한 눈에 알아볼 수 있는 변수명을 사용한다.
+1. 단순히 반복문에 사용되는 변수가 아닌 경우엔 `i`, `e` 같은 변수명 대신 `index`, `employee` 처럼 변수에 저장되는 데이터를 한 눈에 알아볼 수 있는 변수명을 사용한다.
 
-3. 전역 변수의 이름 앞에는 `g_`를 붙인다.
+1. 전역 변수의 이름 앞에는 `g_`를 붙인다.
 
    ```c
    int g_num_monsters = 0;
    ```
 
-4. 정적(`static`) 변수의 이름 앞에는 `s_`를 붙인다.
+1. 정적(`static`) 변수의 이름 앞에는 `s_`를 붙인다.
 
    ```c
    static int s_num_monsters = 0;
    ```
 
-5. 함수의 이름은 동사로 시작한다.
+1. 함수의 이름은 동사로 시작한다.
 
    ```c
    int calculate_income(void)
@@ -51,7 +51,17 @@ date: 2023-07-18
    }
    ```
 
-6. 열거형(`enum`)의 이름은 스네이크 표기법을 따른다. 
+1. 단, 단순히 부울(bool) 상태를 반환하는 메서드의 동사 부분은 최대한 `is`, `can`, `has`, `should`를 사용하되 그러는 것이 부자연스러울 경우에는 상태를 나타내는 다른 3인칭 단수형 동사를 사용한다.
+
+    ```c
+    int is_alive(const person_t* person);
+    int has_child(const person_t* person);
+    int can_accept(const person_t* person);
+    int should_delete(const person_t* person);
+    int exists(const person_t* person);
+    ```
+
+1. 열거형(`enum`)의 이름은 스네이크 표기법을 따른다. 
 
    ```c
    enum game_role {
@@ -60,7 +70,7 @@ date: 2023-07-18
    };
    ```
 
-7. 열거형 상수의 이름은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
+1. 열거형 상수의 이름은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
 
    ```c
    enum game_role {

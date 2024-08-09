@@ -1,6 +1,6 @@
 ---
 title: "POCU 아카데미용 Java 코딩 표준"
-date: 2023-01-12
+date: 2024-08-07
 ---
 
 * 원문(영어): [POCU Java Coding Standards](https://docs.google.com/document/d/1F6A1yc6ZfeLyzAjmPjdJZwLXTd-QXy_MhGA_so7NlSQ/edit)
@@ -25,7 +25,7 @@ date: 2023-01-12
     package com.awesome.math;
     ```
 
-2. `import`를 할 때는 전체 이름을 다 적는다. (*를 사용하지 않음)
+1. `import`를 할 때는 전체 이름을 다 적는다. (*를 사용하지 않음)
 
     **틀린 방식:**
     ```java
@@ -37,7 +37,7 @@ date: 2023-01-12
     import foo.bar;
     ```
 
-3. 클래스와 열거형을 선언할 때는 파스칼 표기법을 따른다.
+1. 클래스와 열거형을 선언할 때는 파스칼 표기법을 따른다.
     
     ```java
     public class PlayerManager {
@@ -51,7 +51,7 @@ date: 2023-01-12
     }
     ```
 
-4. 클래스, 멤버 변수, 메서드에는 언제나 접근 제어자를 붙인다. 단, 기본 패키지 접근 권한이 필요할 경우에는 그렇지 않는다.
+1. 클래스, 멤버 변수, 메서드에는 언제나 접근 제어자를 붙인다. 단, 기본 패키지 접근 권한이 필요할 경우에는 그렇지 않는다.
 
     ```java
     public class Person {
@@ -68,7 +68,7 @@ date: 2023-01-12
     }
     ```
 
-5. 접근 제어자는 다른 수정자(modifier)앞에 붙인다.
+1. 접근 제어자는 다른 수정자(modifier)앞에 붙인다.
 
     **틀린 방식:**
     ```java
@@ -84,14 +84,14 @@ date: 2023-01-12
     }
     ```
 
-6. 모든 메서드 이름은 카멜 표기법을 따라 짓는다.
+1. 모든 메서드 이름은 카멜 표기법을 따라 짓는다.
     ```java
     public int getAge() {
         // 메서드 구현 생략
     }
     ```
 
-7. 지역 변수와 메서드 매개변수 이름은 카멜 표기법을 따라 짓는다.
+1. 지역 변수와 메서드 매개변수 이름은 카멜 표기법을 따라 짓는다.
     
     ```java
     int age = 10;
@@ -101,19 +101,30 @@ date: 2023-01-12
     }
     ```
 
-8. 메서드 이름은 동사로 시작한다.
+1. 메서드 이름은 동사로 시작한다.
     ```java
     public int getAge() {
         // 메서드 구현 생략
     }
     ```
 
-9. 상수로 사용하는 `final` 필드의 변수명은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
+1. 단, 단순히 부울(boolean) 상태를 반환하는 메서드의 동사 부분은 최대한 `is`, `can`, `has`, `should`를 사용하되 그러는 것이 부자연스러울 경우에는 상태를 나타내는 다른 3인칭 단수형 동사를 사용한다.
+
+   ```java
+   public boolean isAlive(Person person);
+   public boolean hasChild(Person person);
+   public boolean canAccept(Person person);
+   public boolean shouldDelete(Person person);
+   public boolean exists(Person person);
+   ```
+
+1. 상수로 사용하는 `final` 필드의 변수명은 모두 대문자로 하되 밑줄로 각 단어를 분리한다.
+
     ```java
     final int SOME_CONSTANT = 1;
     ```
 
-10. 인터페이스의 이름은 `I`로 시작한다.
+1. 인터페이스의 이름은 `I`로 시작한다.
 
     ```java
     interface IFlyable;
