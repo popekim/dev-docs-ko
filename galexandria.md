@@ -1,6 +1,6 @@
 ---
 title: "갈렉산드리아 번역문서 모음"
-date: 2022-06-06
+date: 2025-02-01
 ---
 
 ## 소개
@@ -9,3 +9,4 @@ date: 2022-06-06
 현재 galexandria.com은 더이상 운영되지 않습니다.
 
 * [Denoil의 게임입문강좌](/ko/galexandria/denoil-intro-to-game-programming)
+* [NeHe OpenGL 강좌](/ko/galexandria/nehe-opengl-tutorial)
