@@ -654,15 +654,16 @@ int WINAPI WinMain(	HINSTANCE	hInstance,            	// 인스턴스
 프로그램이 활동중이고 esc키가 눌리지 않았다면 장면을 그리고 버퍼를 스와핑해야 합니다(더블 버퍼링을 이용하여 애니메이션이 깜빡이지 않도록 합니다). 더블 버퍼링이란 보이지 않는 숨겨진 화면에 모든 것을 그리는 방법입니다. 이 버퍼를 바꿔치기(스와핑)하면 현재 우리가 보고 있는 화면에 숨겨진 화면이 되어버리고 숨겨져 있던 화면이 보이게 됩니다. 이 방법을 통해 화면이 그려지는 과정을 볼 수 없게 되는 것입니다. 따라서 숨겨진 화면에 있는것들이 짠\~하고 화면에 나오게 됩니다.
 
   
-
+```cpp
                	DrawGLScene();            	// 장면을 그린다  
                	SwapBuffers(hDC);        	// 버퍼를 스와핑한다 (더블 버퍼링)  
            	}  
        	}
+```
 
 다음의 코드는 2000년 5월 1일에 추가된 코드로서 F1키를 통해 전체화면-윈도우창 모드를 전환할 수 있게 해줍니다.
 
-    
+```cpp
        	if (keys\[VK\_F1\])                	// F1이 눌렸는지 검사  
        	{  
            	keys\[VK\_F1\]=FALSE;            	// 그렇다면 FALSE로 설정  
@@ -675,19 +676,21 @@ int WINAPI WinMain(	HINSTANCE	hInstance,            	// 인스턴스
            	}  
        	}  
    	}  
-   }
+}
+```
 
 done 변수가 더이상 FALSE가 아니면 프로그램이 종료합니다. 우리는 OpenGL 윈도우를 적절히 제거하여 모든 것을 해제하고, 프로그램을 종료합니다.
 
-    
-   // Shutdown  
-   KillGLWindow();                            	// 윈도우를 죽임  
-   return (msg.wParam);                        	// 프로그램 종료  
+```cpp
+    // Shutdown  
+    KillGLWindow();                            	// 윈도우를 죽임  
+    return (msg.wParam);                   		// 프로그램 종료  
 }
+```cpp
 
 저는 이 튜토리얼에서 전체화면 OpenGL 프로그램을 설정 및 생성하는 것에 관련된 모든 단계를 가능한 자세히 설명하려고 노력했습니다. ESC를 누르면 종료하고 창의 활성화 여부까지도 관찰하는 과정까지 말입니다. 이 코드를 작성하는 데는 2주의 시간을 들였고, 버그를 수정하고 다른 프로그래머들과 의견을 교환하는 데는 1주가 소요되었습니다. 그리고 2일동안(약 22시간) 이 HTML 파일을 작성하였습니다. 의견이나 질문이 있으신분들은 이메일을 보내주십시오. 제가 잘못 설명한 것이 있거나 코드를 향상시킬 묘안을 가지고 계시다면 저에게 알려주세요. 저는 최고의 OpenGL 튜토리얼을 만들고 싶고, 따라서 여러분의 피드백에 아주 관심이 많답니다.
 
-## **소스코드 다운로드**
+## 소스코드 다운로드
 
 * [Visual C++](http://nehe.gamedev.net/data/lessons/vc/lesson01.zip)  
 * [ASM](http://nehe.gamedev.net/data/lessons/asm/lesson01.zip) ( 제공: Foolman )  
@@ -723,7 +726,7 @@ done 변수가 더이상 FALSE가 아니면 프로그램이 종료합니다. 우
 * [Visual Fortran](http://nehe.gamedev.net/data/lessons/vfortran/lesson01.zip) ( 제공: Jean-Philippe Perois )  
 * [Visual Studio .NET](http://nehe.gamedev.net/data/lessons/vs_net/lesson01.zip) (제공: Grant James )
 
-## **원문 정보**
+## 원문 정보
 
 * 저자: Jeff Molofee (NeHe)  
 * 원문보기: [Lesson 01](https://nehe.gamedev.net/tutorial/creating_an_opengl_window_(win32)/13001/)
