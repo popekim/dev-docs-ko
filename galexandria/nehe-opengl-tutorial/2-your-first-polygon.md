@@ -1,6 +1,6 @@
 ---
 title: "2. 첫 폴리곤 만들기"
-date: 2025-08-20
+date: 2026-04-14
 ---
 
 ## 소개
@@ -93,47 +93,7 @@ Markus Knauer님이 추가한 내용: "OpenGL Programming Guide: The Official Gu
 
 ## 소스코드 다운로드
 
-이 강좌의 소스코드를 다운받으실 수 있습니다. 자신의 환경에 맞는 파일을 받아 사용하세요.
-
-* [Visual C++](http://nehe.gamedev.net/data/lessons/vc/lesson02.zip)  
-*   
-* [ASM](http://nehe.gamedev.net/data/lessons/asm/lesson02.zip) (제공: Foolman )  
-* [Borland C++ Builder 6](http://nehe.gamedev.net/data/lessons/bcb6/lesson02_bcb6.zip) (제공: Christian Kindahl )  
-* [BeOS](http://nehe.gamedev.net/data/lessons/beos/lesson02.zip) (제공: Rene Manqueros )  
-* [C\#](http://nehe.gamedev.net/data/lessons/c_sharp/lesson02.zip) (제공: Joachim Rohde )  
-* [VB.Net CsGL](http://nehe.gamedev.net/data/lessons/csgl/lesson02.zip) (제공: X )  
-* [Code Warrior 5.3](http://nehe.gamedev.net/data/lessons/cwarrior/lesson02.zip) (제공: Scott Lupton )  
-* [Cygwin](http://nehe.gamedev.net/data/lessons/cygwin/lesson02.tar.gz) (제공: Stephan Ferraro )  
-* [D Language](http://nehe.gamedev.net/data/lessons/d/lesson02.zip) (제공: Familia Pineda Garcia )  
-* [Delphi](http://nehe.gamedev.net/data/lessons/delphi/lesson02.zip) (제공: Michal Tucek )  
-* [Dev C++](http://nehe.gamedev.net/data/lessons/devc/lesson02.zip) (제공: Dan )  
-* [Game GLUT](http://nehe.gamedev.net/data/lessons/gameglut/lesson02.zip) (제공: Milikas Anastasios )  
-* [GLUT](http://nehe.gamedev.net/data/lessons/glut/lesson02.zip) (제공: Andy Restad )  
-* [Irix](http://nehe.gamedev.net/data/lessons/irix/lesson02.zip) (제공: Lakmal Gunasekara )  
-* [Java](http://nehe.gamedev.net/data/lessons/java/lesson02.zip) (제공: Jeff Kirby )  
-* [Java/SWT](http://nehe.gamedev.net/data/lessons/java_swt/lesson02.zip) (제공: Victor Gonzalez )  
-* [Jedi-SDL](http://nehe.gamedev.net/data/lessons/jedisdl/lesson02.zip) (제공 : Dominique Louis )  
-* [JoGL](http://nehe.gamedev.net/data/lessons/jogl/lesson02.jar) (제공: Kevin J. Duling )  
-* [LCC Win32](http://nehe.gamedev.net/data/lessons/lccwin32/lccwin32_lesson02.zip) (제공: Robert Wishlaw )  
-* [Linux](http://nehe.gamedev.net/data/lessons/linux/lesson02.tar.gz) (제공: Richard Campbell )  
-* [Linux/GLX](http://nehe.gamedev.net/data/lessons/linuxglx/lesson02.tar.gz) (제공: Mihael Vrbanec )  
-* [Linux/SDL](http://nehe.gamedev.net/data/lessons/linuxsdl/lesson02.tar.gz) (제공: Ti Leggett )  
-* [LWJGL](http://nehe.gamedev.net/data/lessons/lwjgl/lesson02.jar) (제공: Mark Bernard )  
-* [Mac OS](http://nehe.gamedev.net/data/lessons/mac/lesson02.sit) (제공: Anthony Parker )  
-* [Mac OS X/Cocoa](http://nehe.gamedev.net/data/lessons/macosxcocoa/lesson02.zip) (제공: Bryan Blackburn )  
-* [MASM](http://nehe.gamedev.net/data/lessons/masm/lesson02.zip) (제공: Nico (Scalp) )  
-* [Power Basic](http://nehe.gamedev.net/data/lessons/pbasic/lesson02.zip) (제공: Angus Law )  
-* [Pelles C](http://nehe.gamedev.net/data/lessons/pelles_c/lesson02.zip) (제공: Pelle Orinius )  
-* [Perl](http://nehe.gamedev.net/data/lessons/perl/lesson02.zip) (제공: Cora Hussey )  
-* [Python](http://nehe.gamedev.net/data/lessons/python/lesson02.tar.gz) (제공: John Ferguson )  
-* [QT/C++](http://nehe.gamedev.net/data/lessons/qt_cpp/lesson02.tar.gz) (제공: Popeanga Marian )  
-* [REALbasic](http://nehe.gamedev.net/data/lessons/realbasic/lesson02.rb.hqx) (제공: Thomas J. Cunningham )  
-* [Ruby](http://nehe.gamedev.net/data/lessons/ruby/lesson02.rb) (제공: Ben Goodspeed )  
-* [Scheme](http://nehe.gamedev.net/data/lessons/scheme/lesson02.zip) (제공: Jon DuBois )  
-* [Solaris](http://nehe.gamedev.net/data/lessons/solaris/lesson02.zip) (제공: Lakmal Gunasekara )  
-* [Visual Basic](http://nehe.gamedev.net/data/lessons/vb/lesson02.zip) (제공: Ross Dawson )  
-* [Visual Fortran](http://nehe.gamedev.net/data/lessons/vfortran/lesson02.zip) (제공: Jean-Philippe Perois )  
-* [Visual Studio .NET](http://nehe.gamedev.net/data/lessons/vs_net/lesson02.zip) (제공: Grant James )
+원문 페이지에서 소스코드를 다운로드 받으실 수 있습니다.
 
 ## 원문 정보
 

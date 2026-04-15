@@ -1,6 +1,6 @@
 ---
 title: "1. OpenGL 윈도우 설정하기"
-date: 2025-02-01
+date: 2026-04-13
 ---
 
 ## 소개
@@ -692,39 +692,7 @@ done 변수가 더이상 FALSE가 아니면 프로그램이 종료합니다. 우
 
 ## 소스코드 다운로드
 
-* [Visual C++](http://nehe.gamedev.net/data/lessons/vc/lesson01.zip)  
-* [ASM](http://nehe.gamedev.net/data/lessons/asm/lesson01.zip) ( 제공: Foolman )  
-* [Borland C++ Builder 6](http://nehe.gamedev.net/data/lessons/bcb6/lesson01_bcb6.zip) ( 제공: Christian Kindahl )  
-* [BeOS](http://nehe.gamedev.net/data/lessons/beos/lesson01.zip) ( 제공: Rene Manqueros )  
-* [C\#](http://nehe.gamedev.net/data/lessons/c_sharp/lesson01.zip) ( 제공: Joachim Rohde )  
-* [VB.Net CsGL](http://nehe.gamedev.net/data/lessons/csgl/lesson01.zip) ( 제공: X )  
-* [Code Warrior 5.3](http://nehe.gamedev.net/data/lessons/cwarrior/lesson01.zip) ( 제공: Scott Lupton )  
-* [Cygwin](http://nehe.gamedev.net/data/lessons/cygwin/lesson01.tar.gz) ( 제공: Stephan Ferraro )  
-* [D Language](http://nehe.gamedev.net/data/lessons/d/lesson01.zip) ( 제공: Familia Pineda Garcia )  
-* [Delphi](http://nehe.gamedev.net/data/lessons/delphi/lesson01.zip) ( 제공: Michal Tucek )  
-* [Dev C++](http://nehe.gamedev.net/data/lessons/devc/lesson01.zip) ( 제공: Dan )  
-* [Game GLUT](http://nehe.gamedev.net/data/lessons/gameglut/lesson01.zip) ( 제공: Milikas Anastasios )  
-* [Irix](http://nehe.gamedev.net/data/lessons/irix/lesson01.zip) ( 제공: Lakmal Gunasekara )  
-* [Java](http://nehe.gamedev.net/data/lessons/java/lesson01.zip) ( 제공: Jeff Kirby )  
-* [Java/SWT](http://nehe.gamedev.net/data/lessons/java_swt/lesson01.zip) ( 제공: Victor Gonzalez )  
-* [JoGL](http://nehe.gamedev.net/data/lessons/jogl/lesson01.jar) ( 제공: Kevin J. Duling )  
-* [LCC Win32](http://nehe.gamedev.net/data/lessons/lccwin32/lccwin32_lesson01.zip) ( 제공: Robert Wishlaw )  
-* [Linux](http://nehe.gamedev.net/data/lessons/linux/lesson01.tar.gz) ( 제공: Richard Campbell )  
-* [Linux/GLX](http://nehe.gamedev.net/data/lessons/linuxglx/lesson01.tar.gz) ( 제공: Mihael Vrbanec )  
-* [Linux/SDL](http://nehe.gamedev.net/data/lessons/linuxsdl/lesson01.tar.gz) ( 제공: Ti Leggett )  
-* [LWJGL](http://nehe.gamedev.net/data/lessons/lwjgl/lesson01.jar) ( 제공: Mark Bernard )  
-* [Mac OS](http://nehe.gamedev.net/data/lessons/mac/lesson01.sit) ( 제공: Anthony Parker )  
-* [Mac OS X/Cocoa](http://nehe.gamedev.net/data/lessons/macosxcocoa/lesson01.zip) ( 제공: Bryan Blackburn )  
-* [MASM](http://nehe.gamedev.net/data/lessons/masm/lesson01.zip) ( 제공: Nico (Scalp) )  
-* [Power Basic](http://nehe.gamedev.net/data/lessons/pbasic/lesson01.zip) ( 제공: Angus Law )  
-* [Pelles C](http://nehe.gamedev.net/data/lessons/pelles_c/lesson01.zip) ( 제공: Pelle Orinius )  
-* [Perl](http://nehe.gamedev.net/data/lessons/perl/lesson01.zip) ( 제공: Cora Hussey )  
-* [Python](http://nehe.gamedev.net/data/lessons/python/lesson01.tar.gz) ( 제공: John Ferguson )  
-* [Scheme](http://nehe.gamedev.net/data/lessons/scheme/lesson01.zip) ( 제공: Jon DuBois )  
-* [Solaris](http://nehe.gamedev.net/data/lessons/solaris/lesson01.zip) ( 제공: Lakmal Gunasekara )  
-* [Visual Basic](http://nehe.gamedev.net/data/lessons/vb/lesson01.zip) ( 제공: Ross Dawson )  
-* [Visual Fortran](http://nehe.gamedev.net/data/lessons/vfortran/lesson01.zip) ( 제공: Jean-Philippe Perois )  
-* [Visual Studio .NET](http://nehe.gamedev.net/data/lessons/vs_net/lesson01.zip) (제공: Grant James )
+원문 페이지에서 소스코드를 다운로드 받으실 수 있습니다.
 
 ## 원문 정보
 
