@@ -135,4 +135,4 @@ if (keys[VK_F1])
 ## 원문 정보
 
 * 저자: Jeff Molofee (NeHe)
-* 원문보기: [Lesson 03]https://nehe.gamedev.net/tutorial/adding_colour/13003/)
+* 원문보기: [Lesson 03](https://nehe.gamedev.net/tutorial/adding_colour/13003/)
